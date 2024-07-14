@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+
+#character {
+    background: #000000da;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#main-2 {
+    height: 100vh;
+    background-image: url(img/swiper/power.jfif  );
+    background-size: cover;
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+
+}
+
+
+
+
+
+.colum {
+    display: grid;
+    grid-template-columns: repeat(3, 25% 50% 25%);
+    grid-template-rows: 100%;
+    height: 100%;
+}
+
+.descripcion-pj {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding: 200px 0px 0px 20px;
+
+}
+
+
+.descripcion-pj h1 {
+    color: #fff;
+    font-size: 30px;
+}
+
+#raresa-1 {
+    display: flex;
+    padding-left: 15px;
+    gap: 40px;
+    justify-content: center;
+    padding-top: 15px;
+    text-align: center;
+
+}
+
+#raresa-1 #raresa {
+    width: 20px;
+
+}
+
+#raresa-1 #arma {
+    width: auto;
+    height: 20px;
+}
+
+#raresa-1 #elementos {
+    height: 20px;
+}
+
+.descripcion-pj p {
+    color: #c8c8c8;
+    padding-top: 16px;
+    padding-left: 0spx;
+    font-size: 14px;
+    text-align: l;
+}
+
+.nikke1 {
+    padding-top: 30px;
+}
+
+#nikke {
+    width: 100px;
+    height: auto;
+}
+
+.personaje {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-pj {
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+
+.pj img {
+    overflow: hidden;
+    object-fit: cover;
+    height: 600px;
+    width: auto;
+
+}
+.icons {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0px 0px 20px 0px;
+
+}
+
+.icons-pj {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    padding-top: 25px;
+
+    padding-left: auto;
+    margin: 5px 5px 5px;
+}
+
+.icon button {
+    border: 5px solid rgb(69, 64, 73);
+    background-color: rgba(255, 255, 255, 0.824);
+    filter: grayscale(80%);
+    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+    transition: .7s;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 5px;
+    object-fit: cover;
+    
+
+}
+.icons img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 70px;
+    height: auto;
+
+}
+
+.icon button:hover {
+    filter: saturate(100%);
+    border: 5px solid rgba(72, 52, 79, 0.982);
+    background-color: rgba(98, 98, 98, 0.157);
+    transform: scale(1.1);
+    transition: .7s;
+}
+.fadeout {
+    animation: blur-in-expand .8s linear both;
+    transition: color 0s;
+}
+
+@keyframes blur-in-expand {
+    0% {
+        transform: scale(0.8);
+        filter: blur(10px);
+        opacity: 0
+    }
+
+    50% {
+        transform: scale(1);
+        filter: blur(0);
+        opacity: 1
+    }
+}
+.fadeout:active {
+    animation: blur-in-expand .8s linear both;
+    transition: color 0s;
+}
+
+@keyframes blur-in-expand {
+    0% {
+        transform: scale(0.8);
+        filter: blur(10px);
+        opacity: 0
+    }
+
+    50% {
+        transform: scale(1);
+        filter: blur(0);
+        opacity: 1
+    }
+}

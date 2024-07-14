@@ -1,0 +1,354 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+#uwu-video::-webkit-media-controls {
+    display: none;
+}
+html{ 
+    background-color: black;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Oswald', sans-serif !important;
+}
+.main {
+    height: 100vh;
+    background: #000000a1;
+    width: 100%;
+    max-height: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 10px;
+    z-index: 10;
+    height: 50px;
+}
+#logo {
+    cursor: pointer;
+    margin: 5px;
+    width: auto;
+    height: 30px;
+    
+}
+ul li  {
+    list-style: none;
+    display: inline-block;
+
+    position: relative;
+    background: none;
+    transition: .4s;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+ul li a {
+    left: 0;
+    text-decoration: none;
+    color: #fff;
+}
+ul li a:hover {
+    color: rgb(157, 54, 241);
+    transition: .4s;
+    transform: scale(1.1);
+    text-shadow: 0px 0px 10px  rgba(122, 48, 183, 0.916);
+}
+.descarga {
+    padding-top: 5px;
+}
+.btn-descarga{
+    display: inline-block;
+    border: 1px solid rgb(130, 43, 201);
+    padding: 9px 20px;
+    background: transparent;
+    border-radius: 0px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.4;
+    font-size: 15px;
+    font-weight: 400;
+    transition: .4s;
+}
+.btn-descarga:hover {
+    background: rgba(130, 43, 201, 0.637);
+    transition: .4s;
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 0px 30px 0px rgb(130, 43, 201);
+    -moz-box-shadow: 0px 0px 30px 0px rgb(130, 43, 201);
+    box-shadow: 0px 0px 30px 0px rgb(130, 43, 201);
+}
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#check{
+    display: none;
+}
+
+
+#uwu-video {
+    position: absolute;
+    overflow: hidden;
+	top: 0;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(30%);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+.yt-uwu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+
+    z-index: 100;
+    display: none;
+    animation: 1s;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.iframe-com {
+    width: 600px;
+    height: 385px;
+}
+#sii {
+    color: #fff;
+    font-size: 40px;
+    right: 10px;
+    position: absolute;
+    display: none;
+    top: 10px;
+}
+.bg-yt {
+    background: #000000a1;
+    width: 100%;
+    z-index: 100;
+}
+
+.yt {
+    position: absolute;
+	width: 80px;
+	text-align: center;
+	top:50%;
+    cursor: pointer;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    transition: .8s;
+}
+.yt:hover {
+    width: 100px;
+    transition: .8s;
+}
+
+
+.text-center {
+    position: absolute;
+	width: 100%;
+	text-align: center;
+	top:70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.text-center .yt {
+    background: none;
+    width: 60px;
+    padding-top: 0px;
+    
+}
+.text-center h6 {
+    color: #fff;
+	font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+	margin: 0;
+    padding: 10px;
+}
+.text-center a img {
+    width: 110px;
+    padding-top: 0px;
+}
+
+.owo {
+    display: none;
+}
+
+
+
+@media (max-width: 1920px) {
+    #uwu-video {
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+
+@media (max-width: 1000px){
+    #uwu-video {
+        display: none;
+        
+
+    }
+    #quit {
+        display: none;
+    }
+    .image {
+        background-image: url(img/background/GoddessOfVictoryNikke.webp);
+        position: absolute;
+    overflow: hidden;
+	top: 0;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -100;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0%) /* 0px from the right */
+    calc(100% - 10%) /* 10% from the bottom */  ;
+
+    }
+    .checkbtn{
+        display: block;
+        padding-left: 10px;
+        z-index: 1;
+    }
+    ul{
+        position: fixed;
+        width: 300px;
+        height: 100%;
+        background: #2f2f2fbe;
+        backface-visibility: hidden;
+        overflow: hidden;
+        backdrop-filter: blur(5px);
+        background-size: cover;
+        overflow: hidden;
+        object-fit: cover;
+        top: 0px;
+        left: -100%;
+        z-index: 0;
+        border-radius: 0 10px;
+        text-align: center;
+        transition: all .9s;
+    
+    }
+    #uwu {
+        z-index: 2  !important;
+    }
+    ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    ul li a{
+        font-size: 16px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+   
+    .descarga {
+        padding-top: 5px;
+        
+    }
+    .main {
+
+        width: auto;
+        height: 100%,    
+    }
+    #logo {
+        margin-top: 15px;
+        width: 70px;
+        z-index: -2;
+    }
+    .descarga a {
+        font-size: 10px;
+    }
+    .text-center h6 {
+        font-size: 13px;
+    }
+    .text-center a img {
+        width: 100px;
+    }
+    .uwu-download{
+        width: 300px;
+    }
+    .yt {
+        top: 55%;
+    }
+    #logo {
+        display: none;
+    }
+    .seee {
+        display: flex;
+        justify-content: center;
+    }
+    .owo {
+        display: flex;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        margin: 0 0 10px -25px;
+        
+        cursor: pointer;
+        width: 70px;
+    }
+    .checkbtn {
+        position: fixed;
+    }
+}
+@media (max-width: 1000px){
+    .iframe-com {
+        width: 400;
+        height: 285px;
+    background-size: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 400px;
+    z-index: 100;
+ 
+
+
+    background-position: center;
+    }
+    .yt-uwu {
+        margin-top: 180px;
+    }
+}
